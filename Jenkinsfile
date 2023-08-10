@@ -3,7 +3,7 @@ pipeline {
         label 'Jenkins-Agent'
     }
 
-environment(
+environment (
     PATH = "/opt/maven/bin:$PATH"
 )
 
