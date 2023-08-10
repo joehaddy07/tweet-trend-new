@@ -1,9 +1,8 @@
 pipeline {
     agent (
-        node (
-            label 'Jenkins-Agent'
+        label 'Jenkins-Agent'
             
-            )
+            
         
         )
 
