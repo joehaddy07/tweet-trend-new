@@ -3,9 +3,9 @@ pipeline {
         label 'Jenkins-Agent'
     }
 
-environment (
+environment {
     PATH = "/opt/maven/bin:$PATH"
-)
+}
 
     stages {
         stage('Build') {
@@ -22,3 +22,4 @@ environment (
     }
     // Post-build actions and other configurations
 }
+
