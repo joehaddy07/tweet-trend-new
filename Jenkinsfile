@@ -10,16 +10,8 @@ environment {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean package'
+                sh 'mvn clean deploy'
             }
         }
-        stage('Test') {
-            steps {
-                sh 'mvn test'
-            }
-        }
-        // Add more stages as needed
     }
-    // Post-build actions and other configurations
 }
-
