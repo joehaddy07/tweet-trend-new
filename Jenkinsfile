@@ -10,7 +10,7 @@ environment {
     stages {
         stage('Build'){
             steps {
-                sh 'mvn Clear Deploy'
+                sh 'mvn Clear Package'
             }
         }
     }
