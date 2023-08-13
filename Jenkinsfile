@@ -11,7 +11,7 @@ environment {
         stage('Build'){
             steps {
                 sh 'mvn install'
-                sh 'mvn -Dmaven.surefire.debug test'
+                sh 'mvn -DforkCount=0 test'
             }
         }
     }
