@@ -10,8 +10,8 @@ environment {
     stages {
         stage('Build'){
             steps {
-                sh 'mvn install'
-                sh 'mvn -DforkCount=0 test'
+                sh 'mvn Clean deploy'
+                
             }
         }
     }
