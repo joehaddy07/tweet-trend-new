@@ -11,13 +11,13 @@ environment {
         stage('Build'){
             steps {
                 sh 'mvn clean deploy'
-                
+
             }
         }
     }
 }
 
-stage('SonarQube analysis') {
+ stage('SonarQube analysis') {
     environment {
       scannerHome = tool 'joe-sonar-scannar'
     }
